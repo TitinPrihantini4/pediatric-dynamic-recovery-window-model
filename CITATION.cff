@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this software or model, please cite it as below."
+title: "Pediatric Dynamic Recovery Window Model"
+authors:
+  - name: "Prihantini"
+version: 1.0.0
+date-released: 2026-10-12
+repository-code: "https://github.com/TitinPrihantini4/pediatric-dynamic-recovery-window-model"
+license: MIT
