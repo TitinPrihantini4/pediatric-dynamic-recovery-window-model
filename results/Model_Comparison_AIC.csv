@@ -1,0 +1,6 @@
+model,variables,AIC,synthetic_accuracy
+Full delay-sensitive state,6,5468.233934733946,0.7202
+Clinical five-variable,5,5819.778145338361,0.6996
+Perfusion reserve model,4,5836.118140804485,0.6974
+Lactate plus CRT,2,5993.334737534444,0.6792
+Lactate only,1,6371.468260238295,0.6352
