@@ -1,0 +1,31 @@
+parameter,reference_value,uncertainty_low,uncertainty_high,status
+lactate_prod,0.48,0.3,0.68,provisional normalized coefficient
+lactate_clear,0.34,0.2,0.48,provisional normalized coefficient
+lactate_clear_post,0.62,0.45,0.82,provisional normalized coefficient
+crt_impair,0.72,0.45,0.95,provisional normalized coefficient
+crt_recover,0.58,0.38,0.8,provisional normalized coefficient
+perfusion_restore,0.42,0.28,0.6,provisional normalized coefficient
+perfusion_lactate,0.2,0.1,0.32,provisional normalized coefficient
+perfusion_crt,0.16,0.08,0.26,provisional normalized coefficient
+perfusion_delay,0.22,0.1,0.35,provisional normalized coefficient
+reperfusion_gain,0.95,0.65,1.25,provisional normalized coefficient
+reserve_recover,0.28,0.16,0.42,provisional normalized coefficient
+reserve_injury,0.34,0.2,0.5,provisional normalized coefficient
+reserve_delay,0.18,0.08,0.3,provisional normalized coefficient
+injury_gain,0.34,0.2,0.5,provisional normalized coefficient
+injury_clear,0.24,0.12,0.36,provisional normalized coefficient
+injury_clear_post,0.52,0.34,0.72,provisional normalized coefficient
+delay_scale,3.0,,,provisional normalized coefficient
+hazard_lactate,0.55,0.3,0.8,provisional normalized coefficient
+hazard_crt,0.48,0.25,0.72,provisional normalized coefficient
+hazard_reserve,0.72,0.45,1.0,provisional normalized coefficient
+hazard_delay,0.62,0.35,0.9,provisional normalized coefficient
+q01,0.06,,,provisional normalized coefficient
+q12,0.05,,,provisional normalized coefficient
+q23,0.035,,,provisional normalized coefficient
+q10,0.035,,,provisional normalized coefficient
+q21,0.026,,,provisional normalized coefficient
+q32,0.018,,,provisional normalized coefficient
+discount,0.94,,,decision-analytic assumption
+wait_cost,0.045,,,provisional normalized coefficient
+intervention_cost,0.08,,,provisional normalized coefficient
