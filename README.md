@@ -1,7 +1,7 @@
 # Dynamic Recovery Window Model in Pediatric Surgical Emergencies Using Lactate Clearance, Capillary Refill, and Delay Sensitive Perfusion State Transitions
 
 
-A mathematical proof-of-concept framework for studying time-dependent recovery potential in pediatric surgical emergencies.
+A mathematical proof-of-concept model for studying time-dependent recovery potential in pediatric surgical emergencies.
 
 The model represents intervention delay as a dynamic interaction among lactate, capillary refill, perfusion reserve, recovery reserve, injury accumulation, latent physiological regime transitions, and intervention timing.
 
@@ -9,15 +9,15 @@ The model represents intervention delay as a dynamic interaction among lactate, 
 
 Children requiring emergency surgery may deteriorate while awaiting definitive intervention. The effect of waiting, however, may depend not only on elapsed time but also on the evolving physiological state and remaining recovery capacity.
 
-This repository implements a literature-parameterized Dynamic Recovery Window model that combines:
+This repository implements a literature-parameterized dynamic recovery window model that combines:
 
-- nonlinear ordinary differential equations for continuous physiological states;
-- a four-state continuous-time Markov chain for latent regime transitions;
-- delay-dependent recovery and injury processes;
-- global uncertainty and sensitivity analysis;
-- scenario-based stress testing;
-- numerical robustness analysis; and
-- a finite-horizon optimal-stopping decision layer.
+- nonlinear ordinary differential equations for continuous physiological states,
+- a four state continuous time Markov chain for latent regime transitions,
+- delay dependent recovery and injury processes,
+- global uncertainty and sensitivity analysis,
+- scenario based stress testing,
+- numerical robustness analysis, and
+- a finite horizon optimal stopping decision layer.
 
 The framework is intended as a mathematical and computational proof-of-concept rather than a validated clinical prediction model.
 
@@ -62,14 +62,14 @@ The Dynamic Recovery Window represents the latest evaluated intervention delay f
 
 This quantity is a model-derived mathematical boundary and must not be interpreted as a clinically validated safe-delay threshold.
 
-## Optimal-Stopping Layer
+## Optimal Stopping Layer
 
-A separate finite-horizon decision layer evaluates candidate intervention delays using a provisional objective function combining terminal perfusion reserve, recovery reserve, residual injury, lactate burden, waiting cost, and intervention cost.
+A separate finite horizon decision layer evaluates candidate intervention delays using a provisional objective function combining terminal perfusion reserve, recovery reserve, residual injury, lactate burden, waiting cost, and intervention cost.
 
-The recovery-window boundary and the optimal-stopping solution are distinct mathematical quantities:
+The recovery window boundary and the optimal-stopping solution are distinct mathematical quantities:
 
 - the recovery window describes the boundary of the predefined reversible region;
-- the optimal-stopping solution identifies the candidate delay maximizing the provisional decision objective.
+- the optimal stopping solution identifies the candidate delay maximizing the provisional decision objective.
 
 The decision weights and penalties are structural assumptions and have not been calibrated using patient-level outcomes.
 
@@ -77,13 +77,13 @@ The decision weights and penalties are structural assumptions and have not been 
 
 The repository includes:
 
-- reference trajectory simulation;
-- intervention-delay continuation analysis;
-- scenario stress testing;
-- Latin-hypercube uncertainty analysis;
-- partial rank correlation coefficient (PRCC) sensitivity analysis;
-- numerical solver robustness checks;
-- optimal-stopping surface analysis; and
+- reference trajectory simulation,
+- intervention-delay continuation analysis,
+- scenario stress testing,
+- Latin-hypercube uncertainty analysis,
+- partial rank correlation coefficient (PRCC) sensitivity analysis,
+- numerical solver robustness checks,
+- optimal-stopping surface analysis, and
 - internal synthetic model-recovery analysis using Akaike's information criterion (AIC).
 
 ## Repository Structure
